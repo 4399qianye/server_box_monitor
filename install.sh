@@ -38,7 +38,7 @@ download() {
 
     # Download binary
     echo "Download $DOWNLOAD_URL"
-    wget -q --show-progress $DOWNLOAD_URL -O /tmp/server_box_monitor.tar.gz
+    wget -q $DOWNLOAD_URL -O /tmp/server_box_monitor.tar.gz
     if [ ! -f /tmp/server_box_monitor.tar.gz ]; then
         echo "Download binary failed"
         exit 1
